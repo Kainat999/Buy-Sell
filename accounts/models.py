@@ -1,3 +1,13 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-# Create your models here.
+class CustomUser(AbstractUser):
+    CUSTOMER = 'customer'
+    SELLER = 'seller'
+    USER_CHOICES = [
+        (CUSTOMER, 'Customer'),
+        (SELLER, 'Seller'),
+    ]
+    
+    role = models.CharField(max_length=20, choices=USER_CHOICES)
+    email_verified = models.BooleanField(default=False)
