@@ -49,6 +49,8 @@ Thumbs.db
 *.wmv
 
 # added manually by us
+env/
+env
 venv/
 media/
 db.sqlite3
