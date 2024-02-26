@@ -55,3 +55,4 @@ venv/
 media/
 db.sqlite3
 db-bk-files/
+.env
