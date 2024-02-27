@@ -25,7 +25,7 @@ DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env("ALLOWED_HOST", default=[])
 
 
-AUTH_USER_MODEL = "accounts.user"
+AUTH_USER_MODEL = "accounts.CustomUser"
 # Application definition
 
 INSTALLED_APPS = [
